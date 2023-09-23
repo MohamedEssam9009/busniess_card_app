@@ -15,12 +15,13 @@ class BusinessCardApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: const Color(0xFF2B475E),
         body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const CircleAvatar(
-              radius: 122.0,
+              radius: 112.0,
               backgroundColor: Colors.white,
               child: CircleAvatar(
-                radius: 120.0,
+                radius: 110.0,
                 backgroundImage: AssetImage('images/my_image.png'),
               ),
             ),
@@ -40,16 +41,24 @@ class BusinessCardApp extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
+            const Divider(
+              color: Color(0xFF6C8090),
+              thickness: 1.0,
+              indent: 60.0,
+              endIndent: 60.0,
+              height: 10.0,
+            ),
             Padding(
-              padding: const EdgeInsets.all(16.0),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
               child: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(6.0),
                   color: Colors.white,
                 ),
                 height: 65.0,
-                child: Row(
-                  children: const [
+                child: const Row(
+                  children: [
                     Padding(
                       padding: EdgeInsets.all(16.0),
                       child: Icon(
@@ -58,30 +67,28 @@ class BusinessCardApp extends StatelessWidget {
                         color: Color(0xFF2B475E),
                       ),
                     ),
-                    Spacer(
-                      flex: 1,
+                    Padding(
+                      padding: EdgeInsets.only(left: 22.0),
+                      child: Text(
+                        '(+20) 1019664820',
+                        style: TextStyle(fontSize: 24.0),
+                      ),
                     ),
-                    Text(
-                      '(+20) 1019664820',
-                      style: TextStyle(fontSize: 24.0),
-                    ),
-                    Spacer(
-                      flex: 3,
-                    )
                   ],
                 ),
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(16.0),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
               child: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(6.0),
                   color: Colors.white,
                 ),
                 height: 65.0,
-                child: Row(
-                  children: const [
+                child: const Row(
+                  children: [
                     Padding(
                       padding: EdgeInsets.all(16.0),
                       child: Icon(
@@ -90,15 +97,12 @@ class BusinessCardApp extends StatelessWidget {
                         color: Color(0xFF2B475E),
                       ),
                     ),
-                    Spacer(
-                      flex: 1,
-                    ),
-                    Text(
-                      'mohamed.essam900009@gmail.com',
-                      style: TextStyle(fontSize: 24.0),
-                    ),
-                    Spacer(
-                      flex: 3,
+                    Padding(
+                      padding: EdgeInsets.only(left: 22.0),
+                      child: Text(
+                        'mohamed.essam900009@gmail.com',
+                        style: TextStyle(fontSize: 24.0),
+                      ),
                     ),
                   ],
                 ),
