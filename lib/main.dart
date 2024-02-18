@@ -48,63 +48,43 @@ class BusinessCardApp extends StatelessWidget {
               endIndent: 60.0,
               height: 10.0,
             ),
-            Padding(
-              padding:
-                  const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(6.0),
-                  color: Colors.white,
+            Card(
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(8.0),
+              ),
+              margin: const EdgeInsets.symmetric(
+                horizontal: 16.0,
+                vertical: 8.0,
+              ),
+              child: const ListTile(
+                leading: Icon(
+                  Icons.phone,
+                  size: 32.0,
+                  color: Color(0xFF2B475E),
                 ),
-                height: 65.0,
-                child: const Row(
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.all(16.0),
-                      child: Icon(
-                        Icons.phone,
-                        size: 32.0,
-                        color: Color(0xFF2B475E),
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.only(left: 22.0),
-                      child: Text(
-                        '(+20) 1019664820',
-                        style: TextStyle(fontSize: 24.0),
-                      ),
-                    ),
-                  ],
+                title: Text(
+                  '(+20) 1019664820',
+                  style: TextStyle(fontSize: 24.0),
                 ),
               ),
             ),
-            Padding(
-              padding:
-                  const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(6.0),
-                  color: Colors.white,
+            Card(
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(8.0),
+              ),
+              margin: const EdgeInsets.symmetric(
+                horizontal: 16.0,
+                vertical: 8.0,
+              ),
+              child: const ListTile(
+                leading: Icon(
+                  Icons.mail,
+                  size: 32.0,
+                  color: Color(0xFF2B475E),
                 ),
-                height: 65.0,
-                child: const Row(
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.all(16.0),
-                      child: Icon(
-                        Icons.mail,
-                        size: 32.0,
-                        color: Color(0xFF2B475E),
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.only(left: 22.0),
-                      child: Text(
-                        'mohamed.essam900009@gmail.com',
-                        style: TextStyle(fontSize: 24.0),
-                      ),
-                    ),
-                  ],
+                title: Text(
+                  'mohamed.essam900009@gmail.com',
+                  style: TextStyle(fontSize: 24.0),
                 ),
               ),
             ),
