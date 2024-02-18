@@ -1,16 +1,4 @@
-# business_card_app
+# Business Card App
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screen Shoot
+![Apple iPhone 11 Presentation](https://github.com/MohamedEssam-900009/busniess_card_app/assets/77198018/21ca920a-a5c7-4fac-b7f2-bc6821672108)
